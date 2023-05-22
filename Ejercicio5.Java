@@ -4,8 +4,12 @@ public class Ejercicio5 {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Ingrese un numero entero");
-        double num = input.nextInt();
-        double factorial = 1;
+        int num = input.nextInt();
+        while (num <=0){
+            System.out.println("Ingrese un numero entero");
+         num = input.nextInt();
+        }
+        int factorial = 1;
 
         while (num !=0){
             factorial=factorial*num; num--;
